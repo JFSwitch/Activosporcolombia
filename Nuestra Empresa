@@ -636,7 +636,7 @@
                 <!-- Misión -->
                 <div class="pilar-card">
                     <div class="header-content"><i class="fas fa-bullseye"></i></div>
-                    <h4>Nuestra Misión</h4>
+                    <h4 style="color: #ffffff;">Nuestra Misión</h4>
                     <p>Liderar la gestión de activos inmobiliarios comerciales en Colombia, brindando confianza
                         y soluciones para el comercio y uso institucional.</p>
                     <input type="checkbox" id="mission-expand" class="expand-checkbox">
@@ -660,14 +660,14 @@
                 <!-- Visión -->
                 <div class="pilar-card">
                     <div class="header-content"><i class="fas fa-eye"></i></div>
-                    <h4>Nuestra Visión</h4>
+                    <h4 style="color: #ffffff;">Nuestra Visión</h4>
                     <p>Para 2032, ser la opción principal en Barranquilla y seguir expandiendonos a nivel nacional con solidez y eficiencia.</p>
                     <input type="checkbox" id="vision-expand" class="expand-checkbox">
                     <label for="vision-expand" class="expand-label">
                         <i class="fas fa-chevron-down expand-icon"></i>
                     </label>
                     <div class="pilar-content">
-                        <<p style="text-align: justify;">
+                        <p style="text-align: justify;">
                             Para 2032, nos consolidaremos como la principal opción en
                             la gestión y comercialización de activos inmobiliarios
                             comerciales en la ciudad de Barranquilla. Nos
@@ -684,7 +684,7 @@
                 <!-- Principios -->
                 <div class="pilar-card">
                     <div class="header-content"><i class="fas fa-handshake"></i></div>
-                    <h4>Principios</h4>
+                    <h4 style="color: #ffffff;">Principios</h4>
                     <p>Compromiso, Transparencia, innovación, sostenibilidad y excelencia.</p>
                     <input type="checkbox" id="principles-expand" class="expand-checkbox">
                     <label for="principles-expand" class="expand-label">
@@ -714,7 +714,7 @@
                 <!-- Valores -->
                 <div class="pilar-card">
                     <div class="header-content"><i class="fas fa-star"></i></div>
-                    <h4>Valores</h4>
+                    <h4 style="color: #ffffff;">Valores</h4>
                     <p>Confianza, integridad, eficencia, respeto y Solidaridad.</p>
                     <input type="checkbox" id="values-expand" class="expand-checkbox">
                     <label for="values-expand" class="expand-label">
