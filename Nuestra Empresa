@@ -179,6 +179,21 @@
 
         }
 
+        .tooltip {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 14px;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+            pointer-events: none;
+            white-space: nowrap;
+            transform: translate(-50%, -120%);
+        }
+
         /* Pilares Section */
         .pilares-section {
             background-color: #002751;
@@ -773,6 +788,36 @@
             </div>
         </div>
     </section>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tooltip = document.getElementById("tooltip");
+            const paths = document.querySelectorAll(".colombia-map path");
+
+            paths.forEach(path => {
+                path.addEventListener("mouseover", (event) => {
+                    let name = event.target.getAttribute("data-name") || "Departamento";
+                    tooltip.textContent = name;
+                    tooltip.style.visibility = "visible";
+                    tooltip.style.opacity = "1";
+                });
+
+                path.addEventListener("mousemove", (event) => {
+                    let offsetX = 15; // Ajusta la distancia horizontal
+                    let offsetY = 5;  // Ajusta la distancia vertical
+
+                    tooltip.style.top = `${event.pageY + offsetY}px`;
+                    tooltip.style.left = `${event.pageX + offsetX}px`;
+                });
+
+                path.addEventListener("mouseout", () => {
+                    tooltip.style.visibility = "hidden";
+                    tooltip.style.opacity = "0";
+                });
+            });
+        });
+    </script>
+
     <!-- Footer -->
     <div class="footer-derechos-reservados"> 
         <p>© 2025 Activos por Colombia. Todos los derechos reservados.</p>
